@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  justify-content: center;
+  transition: 2s ease-out-in;
+}
+
+.particule {
+  position: absolute;
+  width: 3px;
+  min-height: 3px;
+  background-color: rgba(255, 128, 0, 1);
+  border-radius: 90px;
+  box-shadow: 0 0px 12px #ec637b, 0 0 10px rgba(230, 161, 173, 0.41),
+    0 0 50px #e6a1ad, 0 0 50px #f36780, 5px 9px 5px rgba(0, 0, 0, 0);
+  transition: height 1s ease-in-out;
+}
+
+.image {
+  cursor: pointer;
+}

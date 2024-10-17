@@ -1,0 +1,259 @@
+* {
+  margin: 0px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* TOP BAR  */
+#home a:hover,
+#products a:hover,
+#contact a:hover {
+  border-bottom: 3px solid #fae100;
+}
+#submenuhover:hover {
+  border-bottom: 1px solid #fefefe;
+}
+
+
+
+header {
+  background-color: #fefefe;
+  height: 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  height: 100%;
+  background-color: #fae100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 24px;
+}
+
+.nav-links a {
+  color: #002f6c;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+
+.right {
+  margin-left: auto;
+}
+#searchimg img {
+  width: 25vw;
+  height: auto;
+  cursor: default;
+}
+#searchimg img:hover {
+  cursor: pointer;
+}
+#accountimg img {
+  width: 7vw;
+  height: auto;
+  cursor: default;
+}
+#accountimg img:hover {
+  cursor: pointer;
+}
+#orderlistimg img {
+  width: 3vw;
+  height: auto;
+  cursor: default;
+}
+#orderlistimg img {
+  cursor: pointer;
+}
+.nav-links right {
+  margin: 0vw;
+}
+
+/* BOTTOM BLUE BAR */
+.bottom-bar {
+  background-color: #002f6c;
+  height: 55px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 50px;
+}
+.bottom-bar ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-bar li {
+  margin: 0 15px;
+  color: #fefefe;
+}
+.bottom-bar #break {
+  opacity: 0.5;
+  font-size: 20px;
+  font-weight: 100;
+}
+.bottom-bar a {
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.mobiletopnav {
+  display: none;
+}
+#weldasbackgroundimage {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .websitetopnav {
+    display: none;
+  }
+  .mobiletopnav {
+    display: block;
+  }
+  .logo {
+    margin-left: 1.25rem;
+  }
+  .logobar {
+    height: 52px;
+    width: 100vw;
+    background-color: #fae100;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .menu {
+    background-color: #002f6c;
+  }
+  .menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+  .menu li {
+    margin: 0.625rem;
+  }
+  .menu a img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: -97%;
+  }
+  nav {
+    display: block;
+  }
+  #weldasbackgroundimage {
+    display: none;
+  }
+
+  .dropdown {
+    display: none;
+    background-color: #fefefe;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10000;
+  }
+  .stopscroll {
+    overflow: hidden;
+  }
+  .menu2 {
+    z-index: 10000000;
+  }
+  #searchimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5vw;
+  }
+  #searchimg img {
+    width: 90vw;
+    height: auto;
+    cursor: default;
+  }
+  .nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-left: 5.8vw;
+  }
+  .nav-links li {
+    margin: 24px 24px 24px auto;
+  }
+
+  .nav-links a {
+    font-size: 10vw;
+    text-decoration: none;
+  }
+
+  .nav-links li:not(.active) a {
+    border-bottom: 4px solid #dfe5ec;
+  }
+
+  .nav-links li a.active {
+    margin: 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #fae100;
+    width: 30vw;
+  }
+
+  select.language {
+    padding-left: 30px; /* add padding for the flag icon */
+  }
+  .lan-for {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f8fa;
+  }
+  .language-option {
+    width: 50vw;
+    margin: 20vw;
+  }
+  .submenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f8fa;
+    padding-bottom: 200px;
+  }
+  .sub {
+    width: 75vw;
+  }
+  .nav-links.open {
+    top: 0;
+    transition: top 2s ease-in-out;
+  }
+}

@@ -1,0 +1,661 @@
+/* FIRST SEGMENT OF THE HOME PAGE */
+
+.containerIntro {
+  display: flex;
+  margin: 2vh auto;
+  padding: 1.6vw;
+  box-sizing: border-box;
+  margin-left: 4vw;
+}
+
+.header {
+  margin-top: 7vh;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3.6vw;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #002f6c;
+}
+.header h2 {
+  margin: 0;
+  font-size: 3.6vw;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2.08vh;
+  color: #009fdf;
+}
+
+.header p {
+  margin: 0;
+  font-size: 1.2vw;
+  line-height: 1.4;
+  font-family: "Lora", serif;
+  color: #002f6c;
+  width: 32.5vw;
+}
+
+.header h3 {
+  margin-top: 5vh;
+  font-size: 1.33vw;
+  line-height: 1.4;
+  font-family: "Josefin Sans", sans-serif;
+  color: #009fdf;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5vh;
+  background-color: #009fdf;
+  color: #fefefe;
+  font-size: 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 179px;
+  height: 53px;
+}
+.button:hover {
+  background-color: #002f6c;
+  transition: 0.5s;
+}
+
+.image {
+  flex-basis: 44%;
+  box-sizing: border-box;
+  margin-left: 3vw;
+}
+
+.image img {
+  width: 53vw;
+  height: auto;
+  box-shadow: 200px 100px #fae100;
+}
+
+@media screen and (max-width: 1100px) {
+  .containerIntro {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-left: 3vw;
+  }
+
+  .header {
+    margin-top: 2vh;
+    margin-left: 3vw;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 8vw;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .header h2 {
+    margin: 0;
+    font-size: 8vw;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .header p {
+    margin: 0;
+    font-size: 3.2vw;
+    line-height: 1.4;
+    width: 90vw;
+  }
+
+  .header h3 {
+    display: none;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 5vh;
+    font-size: 4vw;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 33vw;
+    height: 6vh;
+  }
+
+  #weldasbackgroundimagedesktop {
+    display: none;
+  }
+
+  #weldasbackgroundimage {
+    display: block;
+    width: 100vw;
+  }
+}
+
+/* SECOND SEGMENT OF THE HOME PAGE */
+
+.containerCategories {
+  margin-top: 17vh;
+}
+.containerCategories h1 {
+  margin-left: 6vw;
+  font-size: 3vw;
+  display: inline-block;
+  color: #002f6c;
+}
+.containerCategories h2 {
+  display: inline-block;
+  float: right;
+  font-family: "Lora", serif;
+  margin-right: 6vw;
+  margin-top: 1vw;
+  font-size: 1.3vw;
+  color: #002f6c;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-weight: 100;
+  text-decoration-color: #009fdf;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+.flex-container .item {
+  overflow: hidden;
+}
+
+.flex-container > div {
+  background-color: #eff2f6;
+  width: 21vw;
+  height: 120px;
+  margin: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.flex-container .text {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  transform: translateY(30%);
+}
+
+.flex-container .text p {
+  margin-left: 0.5vw;
+  color: #002f6c;
+}
+.flex-container .text.pad {
+  padding-bottom: 15px;
+}
+
+.flex-container .text span {
+  margin-left: 10px;
+  color: #009fdf;
+}
+.flex-container .image {
+  float: right;
+}
+.flex-container .image img {
+  box-shadow: none;
+  max-width: 100%;
+  width: 150px;
+  margin-bottom: 10px;
+}
+.item:hover {
+  background-color: #8fd7f4;
+  border: #009fdf;
+  transition: 0.5s;
+}
+.item a:link {
+  color: 009fdf;
+}
+
+@media screen and (max-width: 1100px) {
+  .containerCategories {
+    margin-top: 7vh;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-container > div {
+    width: 87vw;
+  }
+  .containerCategories h1 {
+    font-size: 8.2vw;
+  }
+  .containerCategories h2 {
+    font-size: 3.8vw;
+  }
+  .flex-container .text {
+    font-size: 22px;
+  }
+}
+
+/* START OF THE THIRD SEGMENT PRODUCT PROMOTION */
+.containerProduct {
+  display: flex;
+  margin: 10vh auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 4vw;
+}
+
+.headerproduct {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  z-index: 10;
+}
+
+.headerproduct h1 {
+  margin: 0;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #fefefe;
+}
+
+.headerproduct p {
+  font-size: 1vw;
+  line-height: 1.4;
+  font-family: "Lora", serif;
+  color: #fefefe;
+  width: 32.5vw;
+}
+
+.headerproduct p1 {
+  font-size: 1.5vw;
+  line-height: 1.4;
+  font-family: "Lora", serif;
+  color: #fefefe;
+  margin-top: 6vh;
+  display: flex;
+  display: inline-block;
+  text-decoration: underline 1.5px #fefefe;
+  text-underline-offset: 10px;
+}
+.headerproduct #arrow {
+  font-size: 1.5vw;
+  line-height: 1.4;
+  padding-left: 1vw;
+  font-family: "Lora", serif;
+  color: #fefefe;
+  margin-top: 6vh;
+  display: inline-block;
+}
+
+.imageproduct {
+  flex-basis: 44%;
+  box-sizing: border-box;
+  margin-left: 5vw;
+  z-index: 1;
+}
+
+.imageproduct img {
+  width: 45vw;
+  height: auto;
+  position: absolute;
+  box-shadow: -41.5vw -5vh #009fdf;
+}
+.imageproduct #weldasbackgroundimagedesktop2 {
+  box-shadow: -20vw -5vh #009fdf;
+}
+
+.imageproduct #weldasbackgroundimagemobile {
+  box-shadow: none;
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .containerProduct {
+    display: flex;
+    margin-top: 6vh;
+    margin-left: 0px;
+    padding: 0px;
+    background-color: #009fdf;
+    overflow-x: hidden;
+    height: 25vh;
+  }
+
+  .products {
+    padding-bottom: 1vh;
+  }
+  .headerproduct {
+    margin-top: 3vh;
+    margin-left: 4vw;
+  }
+
+  .headerproduct h1 {
+    margin: 0;
+    font-size: 5vw;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #fefefe;
+  }
+
+  .headerproduct p {
+    font-size: 3vw;
+    line-height: 1.4;
+    font-family: "Lora", serif;
+    color: #fefefe;
+    width: 35vw;
+  }
+
+  .headerproduct p1 {
+    font-size: 3vw;
+    line-height: 1.4;
+    margin-top: 3vh;
+    display: flex;
+    display: inline-block;
+    text-decoration: underline 1.5px #fefefe;
+    text-underline-offset: 4px;
+  }
+  .headerproduct #arrow {
+    font-size: 3vw;
+    line-height: 1.4;
+    padding-left: 0.5vw;
+    font-family: "Lora", serif;
+    color: #fefefe;
+    margin-top: 1vh;
+    display: inline-block;
+  }
+
+  .imageproduct {
+    margin-left: 0vw;
+    display: flex;
+  }
+
+  .imageproduct img {
+    height: 25vh;
+    width: 50vw;
+    object-fit: cover;
+    object-position: 50% 0;
+    box-shadow: none;
+  }
+  .imageproduct #weldasbackgroundimagedesktop2 {
+    box-shadow: none;
+    display: none;
+  }
+  .imageproduct #weldasbackgroundimagemobile {
+    display: flex;
+    float: right;
+    right: 0px;
+  }
+}
+
+/* START OF THE DEALS PART */
+.deals {
+  margin-top: 30vh;
+  overflow: hidden;
+}
+.products {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  overflow-x: scroll;
+  width: 88vw;
+}
+
+.deals ::-webkit-scrollbar {
+  margin-top: 5vh;
+  height: 1vh;
+}
+.deals ::-webkit-scrollbar-track {
+  background: lightgray;
+}
+.deals ::-webkit-scrollbar-thumb {
+  background: #009fdf;
+}
+.deals ::-webkit-scrollbar-thumb:hover {
+  background: #002f6c;
+}
+
+.product {
+  padding: 1vw;
+}
+.product img {
+  width: 11vw;
+}
+.product h1 {
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #8097b6;
+}
+.product h2 {
+  font-family: "Josefin Sans";
+  margin-top: 1vh;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #002f6c;
+}
+.product button {
+  margin-top: 2vh;
+}
+.headerdeals h1 {
+  margin-left: 6vw;
+  font-size: 3vw;
+  display: inline-block;
+  color: #002f6c;
+}
+.headerdeals h2 {
+  display: inline-block;
+  font-family: "Lora", serif;
+  margin-left: 67vw;
+  margin-top: 1vw;
+  font-size: 1.3vw;
+  color: #002f6c;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-weight: 100;
+  text-decoration-color: #009fdf;
+}
+@media screen and (max-width: 1100px) {
+  .deals {
+    margin-top: -3vh;
+    margin-bottom: 4vh;
+  }
+  .headerdeals h1 {
+    font-size: 8.2vw;
+  }
+  .headerdeals h2 {
+    font-size: 3.8vw;
+    margin-left: 32vw;
+    text-underline-offset: 2px;
+  }
+  .product h1 {
+    font-size: 5vw;
+  }
+  .product h2 {
+    font-size: 4.5vw;
+  }
+  .product img {
+    width: 37vw;
+  }
+}
+
+/* START OF THE MEMBERSHIP PART */
+
+.containermembership {
+  display: flex;
+  margin: 15vh auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 5vw;
+}
+
+.imagemembership img {
+  width: 45vw;
+  height: auto;
+  position: absolute;
+  box-shadow: 42vw -5vh #009fdf;
+}
+.imagemembership #weldasbackgroundimagedesktop2 {
+  box-shadow: 20vw -5vh #009fdf;
+}
+
+.imagemembership {
+  z-index: 1;
+}
+.headermembership {
+  z-index: 10;
+  margin-left: 50vw;
+  margin-top: 1vh;
+}
+.headermembership h1 {
+  margin: 0;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #fefefe;
+}
+
+.headermembership p {
+  font-size: 1vw;
+  line-height: 1.4;
+  font-family: "Lora", serif;
+  color: #fefefe;
+  width: 32.5vw;
+}
+
+.headermembership p1 {
+  font-size: 1.5vw;
+  line-height: 1.4;
+  font-family: "Lora", serif;
+  color: #fefefe;
+  display: flex;
+  display: inline-block;
+  text-decoration: underline 1.5px #fefefe;
+  text-underline-offset: 10px;
+}
+.headermembership #arrow {
+  font-size: 1.5vw;
+  line-height: 1.4;
+  padding-left: 1vw;
+  font-family: "Lora", serif;
+  color: #fefefe;
+  margin-top: 6vh;
+  display: inline-block;
+}
+.imagemembership #weldasbackgroundimagemobile {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .containermembership {
+    display: flex;
+    margin: 7vh auto;
+    padding: 0px;
+    margin-left: 0vw;
+  }
+  .imagemembership #weldasbackgroundimagedesktop {
+    display: none;
+  }
+  .imagemembership #weldasbackgroundimagedesktop2 {
+    display: none;
+  }
+  .imagemembership #weldasbackgroundimagemobile {
+    display: block;
+    box-shadow: none;
+    width: 100vw;
+    margin-left: 0vw;
+  }
+  .headermembership {
+    background-color: #009fdf;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 45vw;
+  }
+  .imagemembership img {
+    width: 45vw;
+    height: auto;
+    display: block;
+  }
+
+  .headermembership h1 {
+    margin-left: 6vw;
+    margin-top: 2vh;
+    font-size: 5vw;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #fefefe;
+  }
+
+  .headermembership p {
+    font-size: 3vw;
+    margin-left: 6vw;
+    line-height: 1.4;
+    font-family: "Lora", serif;
+    color: #fefefe;
+    width: 80vw;
+  }
+
+  .headermembership p1 {
+    font-size: 3vw;
+    margin-bottom: 4vh;
+    margin-left: 6vw;
+    line-height: 1.4;
+    font-family: "Lora", serif;
+    color: #fefefe;
+    display: flex;
+    display: inline-block;
+    text-decoration: underline 1px #fefefe;
+    text-underline-offset: 4px;
+  }
+  .headermembership #arrow {
+    font-size: 3vw;
+    line-height: 1.4;
+    padding-left: 1vw;
+    font-family: "Lora", serif;
+    color: #fefefe;
+    margin-top: 2vh;
+    display: inline-block;
+  }
+}
+
+/* START OF THE VIDEO PART */
+.videosection {
+  margin-top: 30vh;
+}
+.videos {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+.video iframe {
+  width: 42vw;
+  height: 23.6vw;
+}
+@media screen and (max-width: 1100px) {
+  .videosection {
+    margin-top: -2vh;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video iframe {
+    width: 90vw;
+    height: 50.6vw;
+    margin-top: 5vh;
+  }
+}

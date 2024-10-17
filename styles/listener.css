@@ -1,0 +1,183 @@
+.image img {
+  width: 46vw;
+  height: auto;
+  margin-left: 13.3vw;
+}
+.title {
+  margin-top: 1.5vw;
+  margin-bottom: 1vw;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.4vw;
+  line-height: 1.875rem;
+  color: #002f6c;
+  text-align: left;
+}
+
+.item img {
+  max-width: 100%;
+}
+
+.containerIntro {
+  display: flex;
+  margin: 2vh auto;
+  /* padding: 1.6vw; */
+  box-sizing: border-box;
+  margin-left: 4vw;
+}
+.containerProducts {
+  margin: 10vh auto;
+  /* padding: 1.6vw; */
+  box-sizing: border-box;
+  margin-left: 4vw;
+}
+
+.header {
+  margin-top: 7vh;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #002f6c;
+}
+
+.header p {
+  margin: 0;
+  font-size: 1.2vw;
+  line-height: 1.4;
+  font-family: "Lora", serif;
+  color: #002f6c;
+  width: 32.5vw;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 31.33%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-right: 18px;
+  margin-top: 18px;
+  background-color: #eff2f6;
+  display: flex;
+  flex-direction: column;
+}
+
+.item a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+item a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.item:hover {
+  background-color: #8fd7f4;
+  border: #009fdf;
+  transition: 0.5s;
+}
+.item a:link {
+  color: 009fdf;
+}
+
+.item img {
+  width: 180px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.text {
+  margin-top: auto;
+  margin-bottom: 0;
+  font-size: 1.8vw;
+  color: #002f6c;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-left: 3vw;
+    margin-left: -4vw;
+  }
+  .containerIntro {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-left: 3vw;
+  }
+
+  .header {
+    margin-top: 2vh;
+    margin-left: 1vw;
+  }
+  .item:hover {
+    background-color: #8fd7f4;
+    border: #009fdf;
+  }
+
+  .item {
+    margin: 9px 9px 9px 9px;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 7vw;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .header p {
+    margin: 0;
+    font-size: 3vw;
+    line-height: 1.4;
+    width: 95vw;
+  }
+  .title {
+    /* margin: 4vw; */
+    font-size: 5.9vw;
+    /* text-align: center; */
+  }
+  .text {
+    font-size: 4.5vw;
+  }
+  .item {
+    width: 44%;
+  }
+  .item img {
+    padding-bottom: 13px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #weldasbackgroundimagedesktop {
+    display: none;
+  }
+
+  #weldasbackgroundimage {
+    display: block;
+    width: 100vw;
+  }
+}

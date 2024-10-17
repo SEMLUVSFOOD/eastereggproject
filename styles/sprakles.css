@@ -1,0 +1,10 @@
+canvas {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  top: 0;
+  left: 0;
+  z-index: 234;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  outline: none;
+}
